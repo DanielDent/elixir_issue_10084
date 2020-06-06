@@ -9,4 +9,5 @@ RUN apt-get update \
    && mix local.hex --force
 COPY . /src
 WORKDIR /src
-RUN mix deps.get && mix
+RUN mix deps.get
+RUN mix
